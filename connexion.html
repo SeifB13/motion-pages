@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connexion des comptes — Motion</title>
+  <style>
+    :root { --bg: #0b0e1a; --ink: #f4f1e8; --dim: #a5abc7; --accent: #ffb547; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 20px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    p { color: var(--dim); }
+    .accounts { display: grid; gap: 14px; margin-top: 28px; }
+    a.btn { display: flex; align-items: center; gap: 14px; padding: 16px 20px; border-radius: 14px; background: #ffffff10; border: 2px solid #ffffff22; color: var(--ink); text-decoration: none; font-weight: 700; }
+    a.btn:hover { border-color: var(--accent); }
+    .dot { width: 14px; height: 14px; border-radius: 50%; flex: none; }
+    small { display: block; color: var(--dim); font-weight: 400; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Connecter un compte TikTok</h1>
+    <p>Chaque chaîne Motion publie sur son propre compte TikTok. Choisis la chaîne, puis connecte-toi avec le compte TikTok correspondant et autorise Motion à publier les vidéos validées.</p>
+    <div class="accounts">
+      <a class="btn" href="http://192.168.1.143:8787/tiktok/connect/astro"><span class="dot" style="background:#FFB547"></span><span>Ciel Profond<small>@cielprofondfr · astronomie</small></span></a>
+      <a class="btn" href="http://192.168.1.143:8787/tiktok/connect/psycho"><span class="dot" style="background:#8FD9C9"></span><span>Dans ta tête<small>@danstatete.psycho · psychologie</small></span></a>
+      <a class="btn" href="http://192.168.1.143:8787/tiktok/connect/mysteres"><span class="dot" style="background:#D8433A"></span><span>Dossiers Classés<small>@dossiersclassesfr · mystères</small></span></a>
+    </div>
+    <p style="margin-top:32px"><a href="index.html" style="color:var(--accent)">← Accueil</a> · <a href="confidentialite.html" style="color:var(--accent)">Confidentialité</a> · <a href="conditions.html" style="color:var(--accent)">Conditions</a></p>
+  </main>
+</body>
+</html>
