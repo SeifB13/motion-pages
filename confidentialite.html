@@ -4,41 +4,67 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Règles de confidentialité — Motion</title>
-  <style>
-    :root { --bg: #0b0e1a; --ink: #f4f1e8; --dim: #a5abc7; --accent: #ffb547; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
-    main { max-width: 720px; margin: 0 auto; padding: 56px 20px; }
-    h1 { font-size: 2rem; margin: 0 0 4px; }
-    h2 { font-size: 1.15rem; margin-top: 32px; color: var(--accent); }
-    p, li { color: var(--dim); }
-    a { color: var(--accent); }
-  </style>
+  <meta name="description" content="Règles de confidentialité de Motion.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Règles de confidentialité</h1>
-    <p>Dernière mise à jour : 19 octobre 2026</p>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="img/icon-192.png" alt="">Motion</a>
+      <nav class="main">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#chaines">Nos chaînes</a>
+        <a href="fonctionnement.html">Comment ça marche</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="confidentialite.html" aria-current="page">Confidentialité</a>
+        <a href="conditions.html">Conditions</a>
+      </nav>
+    </div>
+  </header>
 
-    <h2>Qui sommes-nous</h2>
-    <p>« Motion » est un outil interne de production et de publication de vidéos de vulgarisation, utilisé par son seul propriétaire pour ses propres chaînes. Ce n'est pas un service ouvert au public.</p>
+  <main class="wrap">
+    <article class="doc">
+      <h1>Règles de confidentialité</h1>
+      <p>Dernière mise à jour : 26 octobre 2026</p>
 
-    <h2>Données utilisées</h2>
-    <ul>
-      <li><strong>Google (Drive, Sheets, YouTube)</strong> : Motion accède uniquement aux comptes de son propriétaire, avec son autorisation, pour lire et mettre à jour son tableau de suivi, archiver les vidéos produites dans son Google Drive et publier sur sa chaîne YouTube. L'accès au Drive est limité aux fichiers créés par Motion.</li>
-      <li><strong>TikTok</strong> : Motion utilise l'API de publication de contenu pour envoyer les vidéos sur les comptes TikTok de son propriétaire.</li>
-      <li><strong>Spectateurs</strong> : Motion ne collecte, ne stocke et ne traite aucune donnée personnelle des spectateurs ou de tiers.</li>
-    </ul>
+      <h2>Qui sommes-nous</h2>
+      <p>« Motion » est un studio indépendant de vulgarisation, et l'outil interne qu'il utilise pour produire et publier ses vidéos sur ses propres chaînes. Cet outil n'est pas un service ouvert au public.</p>
 
-    <h2>Conservation et partage</h2>
-    <p>Les jetons d'accès sont conservés sur les serveurs privés du propriétaire et ne sont jamais partagés. Aucune donnée n'est vendue, louée ni transmise à des tiers. Les données des services Google sont utilisées conformément à la politique relative aux données utilisateur des services d'API Google, y compris ses exigences d'utilisation limitée.</p>
+      <h2>Données utilisées</h2>
+      <ul>
+        <li><strong>Google (Drive, Sheets, YouTube)</strong> : Motion accède uniquement aux comptes de son propriétaire, avec son autorisation, pour lire et mettre à jour son tableau de suivi, archiver les vidéos produites dans son Google Drive et publier sur ses chaînes YouTube. L'accès au Drive est limité aux fichiers créés par Motion.</li>
+        <li><strong>TikTok</strong> : Motion utilise Login Kit pour relier les comptes TikTok de son propriétaire (identifiant du compte, nom d'utilisateur et avatar, uniquement pour vérifier le compte relié) et l'API de publication de contenu pour publier les vidéos sur ces comptes.</li>
+        <li><strong>Spectateurs et visiteurs</strong> : Motion ne collecte, ne stocke et ne traite aucune donnée personnelle des spectateurs, des visiteurs de ce site ou de tiers. Ce site n'utilise ni cookies ni outil de mesure d'audience.</li>
+      </ul>
 
-    <h2>Révocation</h2>
-    <p>Les autorisations accordées peuvent être révoquées à tout moment depuis les paramètres de sécurité du compte Google (<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>) ou les paramètres du compte TikTok.</p>
+      <h2>Conservation et partage</h2>
+      <p>Les jetons d'accès sont conservés sur les serveurs privés du propriétaire et ne sont jamais partagés. Aucune donnée n'est vendue, louée ni transmise à des tiers. Les données des services Google sont utilisées conformément à la politique relative aux données utilisateur des services d'API Google, y compris ses exigences d'utilisation limitée.</p>
 
-    <h2>Contact</h2>
-    <p><a href="https://github.com/SeifB13">github.com/SeifB13</a></p>
-    <p><a href="index.html">← Retour à l'accueil</a></p>
+      <h2>Révocation</h2>
+      <p>Les autorisations accordées peuvent être révoquées à tout moment depuis les paramètres de sécurité du compte Google (<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>) ou les paramètres du compte TikTok (Paramètres et confidentialité → Sécurité → Applications et services).</p>
+
+      <h2>Contact</h2>
+      <p><a href="https://github.com/SeifB13">github.com/SeifB13</a></p>
+
+      <div class="en">
+        <h3>In English — privacy policy summary</h3>
+        <p>Motion is an internal tool used only by its owner. It accesses only the owner's own Google (Drive, Sheets, YouTube) and TikTok accounts, with consent, to manage its planning sheet, archive videos and publish to its own channels. TikTok Login Kit data (open_id, username, avatar) is used only to confirm which account is linked. No data about viewers, website visitors or third parties is collected; this site uses no cookies or analytics. Tokens are stored on the owner's private servers and never shared or sold. Permissions can be revoked at any time from Google or TikTok account settings.</p>
+      </div>
+    </article>
   </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div><a class="brand" href="index.html"><img src="img/icon-192.png" alt="">Motion</a><p>La science racontée en motion design.</p></div>
+      <div>
+        <a href="fonctionnement.html">Comment ça marche</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions.html">Conditions d'utilisation</a><br>
+        Contact : <a href="https://github.com/SeifB13">github.com/SeifB13</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

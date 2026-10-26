@@ -3,35 +3,119 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Motion</title>
-  <meta name="description" content="Motion — chaînes de vulgarisation en motion design : astronomie, psychologie, mystères.">
-  <style>
-    :root { --bg: #0b0e1a; --ink: #f4f1e8; --dim: #a5abc7; --accent: #ffb547; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
-    main { max-width: 720px; margin: 0 auto; padding: 56px 20px; }
-    h1 { font-size: 2.4rem; margin: 0 0 8px; }
-    h1 span { color: var(--accent); }
-    p, li { color: var(--dim); }
-    ul { padding-left: 1.2em; }
-    a { color: var(--accent); }
-    footer { margin-top: 48px; font-size: .9rem; color: var(--dim); }
-  </style>
+  <title>Motion — la science racontée en motion design</title>
+  <meta name="description" content="Motion produit de courtes vidéos de vulgarisation en motion design, en français : astronomie, psychologie et mystères non résolus, sur TikTok et YouTube Shorts.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta property="og:title" content="Motion — la science racontée en motion design">
+  <meta property="og:image" content="img/icon-512.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Motion<span>.</span></h1>
-    <p>Motion produit de courtes vidéos de vulgarisation en motion design, en français, publiées sur nos propres chaînes TikTok et YouTube Shorts :</p>
-    <ul>
-      <li><strong>Astronomie</strong> : les mystères et curiosités de l'espace ;</li>
-      <li><strong>Psychologie</strong> : comment le fonctionnement de l'esprit influence notre quotidien ;</li>
-      <li><strong>Mystères non résolus</strong> : les énigmes qui résistent encore aux explications.</li>
-    </ul>
-    <p>Les vidéos sont réalisées avec l'aide d'outils d'intelligence artificielle (rédaction, voix de synthèse, animation générée par code) et vérifiées avant publication. Chaque vidéo cite ses sources.</p>
-    <p>L'application Motion est un outil interne : elle publie uniquement sur les comptes de son propriétaire et archive les vidéos dans son propre espace de stockage. Elle ne collecte aucune donnée sur les spectateurs.</p>
-    <p><a href="connexion.html"><strong>Connecter un compte TikTok →</strong></a></p>
-    <p><a href="confidentialite.html">Règles de confidentialité</a> · <a href="conditions.html">Conditions d’utilisation</a></p>
-    <footer>Contact : <a href="https://github.com/SeifB13">github.com/SeifB13</a></footer>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="img/icon-192.png" alt="">Motion</a>
+      <nav class="main">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="#chaines">Nos chaînes</a>
+        <a href="fonctionnement.html">Comment ça marche</a>
+        <a href="#faq">FAQ</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="conditions.html">Conditions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="kicker">Vulgarisation · motion design · en français</div>
+        <h1>La science racontée en une minute, en images qui bougent.</h1>
+        <p class="lead">Motion est un petit studio de vulgarisation. Nous publions chaque jour de courtes vidéos animées sur trois chaînes : les mystères de l'espace, le fonctionnement de notre esprit, et les énigmes qui résistent encore aux explications.</p>
+        <div class="dots"><span style="background:#ffb547"></span><span style="background:#8fd9c9"></span><span style="background:#d8433a"></span></div>
+        <a class="btn" href="#chaines">Découvrir nos chaînes</a>
+        <a class="btn ghost" href="fonctionnement.html">Comment nous travaillons</a>
+      </div>
+      <img class="icon" src="img/motion-icon.png" alt="Logo Motion : un M crème sur un ciel étoilé, avec trois points ambre, menthe et rouge pour les trois chaînes">
+    </section>
+
+    <section id="chaines">
+      <div class="kicker">Nos chaînes</div>
+      <h2>Trois univers, une même exigence</h2>
+      <p class="lead">Une idée forte par vidéo, une histoire, des sources vérifiées. Chaque chaîne a sa voix, ses couleurs et son ton.</p>
+      <div class="grid3">
+        <article class="card">
+          <img class="logo" src="img/logo-astro.jpg" alt="Logo Ciel Profond">
+          <h3>Ciel Profond</h3>
+          <p>Astronomie et espace : exoplanètes, trous noirs, histoires de découvertes et paradoxes du cosmos, racontés comme des enquêtes.</p>
+          <div class="links"><a href="https://www.tiktok.com/@cielprofondfr">TikTok</a><a href="https://www.youtube.com/channel/UCElJ05g0iF3iy4omnyUXu_g">YouTube</a></div>
+        </article>
+        <article class="card">
+          <img class="logo" src="img/logo-psycho.jpg" alt="Logo Dans ta tête">
+          <h3>Dans ta tête</h3>
+          <p>Psychologie du quotidien : pourquoi on procrastine, pourquoi les souvenirs nous trompent, comment nos émotions nous guident. Sans jargon, sans diagnostic.</p>
+          <div class="links"><a href="https://www.tiktok.com/@danstatete.psycho">TikTok</a><a href="https://www.youtube.com/channel/UC9CgB1-5zHSvkouWX0XUWZw">YouTube</a></div>
+        </article>
+        <article class="card">
+          <img class="logo" src="img/logo-mysteres.jpg" alt="Logo Dossiers Classés">
+          <h3>Dossiers Classés</h3>
+          <p>Mystères non résolus : navires fantômes, codes jamais déchiffrés, disparitions inexpliquées. Ce que disent vraiment les enquêtes, et ce que la légende a ajouté.</p>
+          <div class="links"><a href="https://www.tiktok.com/@dossiersclassesfr">TikTok</a><a href="https://www.youtube.com/channel/UCSOmn6x0rW_GWmWMVEn3QtA">YouTube</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="videos">
+      <div class="kicker">Quelques vidéos</div>
+      <h2>Déjà en ligne</h2>
+      <div class="covers">
+        <a href="https://youtube.com/shorts/5-Udl4ikxjY"><img src="img/cover-venus.jpg" alt="">Qui a retourné Vénus ?</a>
+        <a href="https://youtube.com/shorts/n9larW2vkas"><img src="img/cover-pulsars.jpg" alt="">Le signal des petits hommes verts</a>
+        <a href="https://youtube.com/shorts/-pz7Dnoasds"><img src="img/cover-procrastination.jpg" alt="">Procrastiner, ce n'est pas de la paresse</a>
+        <a href="https://youtube.com/shorts/ipoR4uM3ViM"><img src="img/cover-faux-souvenirs.jpg" alt="">Pourquoi le cerveau invente des souvenirs</a>
+        <a href="https://youtube.com/shorts/1oh_repikds"><img src="img/cover-mary-celeste.jpg" alt="">La Mary Celeste</a>
+        <a href="https://youtube.com/shorts/CNRC-VJ-ozg"><img src="img/cover-pirate.jpg" alt="">Le pirate de la télé</a>
+      </div>
+    </section>
+
+    <section id="engagements">
+      <div class="kicker">Nos engagements</div>
+      <h2>Vulgariser sans trahir</h2>
+      <div class="steps">
+        <div class="card"><h3>Des faits sourcés</h3><p>Chaque affirmation est vérifiée auprès de sources solides (agences spatiales, revues scientifiques, institutions, archives) et les sources sont citées dans la description de chaque vidéo.</p></div>
+        <div class="card"><h3>Une intelligence artificielle assumée</h3><p>Nous utilisons l'IA pour écrire, donner une voix et animer, puis chaque vidéo est relue et validée par un humain. Elles sont toutes étiquetées « contenu généré par IA ».</p></div>
+        <div class="card"><h3>Prudence sur les sujets sensibles</h3><p>Pas de diagnostic ni de conseil médical en psychologie ; respect des victimes et pas d'accusation dans les affaires non résolues.</p></div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="kicker">FAQ</div>
+      <h2>Questions fréquentes</h2>
+      <details><summary>Qui fait les vidéos ?</summary><p>Motion est un projet indépendant. Les vidéos sont produites avec un outil interne qui assemble la recherche, l'écriture, la voix de synthèse et l'animation, puis chaque vidéo est validée à la main avant publication. Voir <a href="fonctionnement.html">comment ça marche</a>.</p></details>
+      <details><summary>Les vidéos sont-elles générées par IA ?</summary><p>En partie : le texte, la voix et l'animation sont produits avec des outils d'IA et du code, puis vérifiés. Nous l'indiquons sur chaque vidéo avec l'étiquette prévue par TikTok et YouTube.</p></details>
+      <details><summary>Une erreur dans une vidéo ?</summary><p>Ça peut arriver malgré nos vérifications. Signale-la en commentaire sous la vidéo ou via le contact ci-dessous : nous corrigeons la description et en tenons compte pour les vidéos suivantes.</p></details>
+      <details><summary>Collectez-vous des données sur les spectateurs ?</summary><p>Non. Motion ne collecte aucune donnée sur les personnes qui regardent ou commentent nos vidéos. Voir nos <a href="confidentialite.html">règles de confidentialité</a>.</p></details>
+      <details><summary>Puis-je utiliser l'outil Motion ?</summary><p>Non : c'est un outil interne, utilisé uniquement pour publier sur nos propres comptes. Il n'est pas proposé au public.</p></details>
+    </section>
+
+    <section style="border-bottom:0;padding-top:0">
+      <div class="en">
+        <h3>In English</h3>
+        <p>Motion is an independent French science-communication studio publishing short animated explainer videos on three channels: astronomy (Ciel Profond), psychology (Dans ta tête) and unsolved mysteries (Dossiers Classés), on TikTok and YouTube Shorts. Videos are made with AI tools (writing, synthetic voice, code-generated animation), reviewed by a human before publication, labelled as AI-generated, and cite their sources. Our internal tool only publishes to our own accounts and collects no viewer data. See <a href="fonctionnement.html">how it works</a>, the <a href="confidentialite.html">privacy policy</a> and the <a href="conditions.html">terms of service</a>.</p>
+      </div>
+    </section>
   </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div><a class="brand" href="index.html"><img src="img/icon-192.png" alt="">Motion</a><p>La science racontée en motion design.</p></div>
+      <div>
+        <a href="fonctionnement.html">Comment ça marche</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions.html">Conditions d'utilisation</a><br>
+        Contact : <a href="https://github.com/SeifB13">github.com/SeifB13</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
